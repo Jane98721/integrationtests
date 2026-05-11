@@ -4,7 +4,7 @@ import {expect, test} from '@jest/globals'
 describe("Book shop unit test", () => {
   test("Find a valid book with valid title",  () => {
     const book = findBook('Dune')
-    expect(book).toEqual({title: 'Dune', price: undefined})
+    expect(book).toEqual({title: 'Dune', price: 45})
 })
 
   test("If unknown title is provided, it should return undefined", () => {
